@@ -1,0 +1,277 @@
+video{
+    position: absolute;
+    top: 0px;
+    left: 20%;
+    z-index: 1;
+}
+
+img{
+    width: 130px;
+    height: 117px;
+    background-color:transparent;
+}
+
+table{
+    margin: 0px auto;
+}
+
+h3::before{
+    content:"Find your children in no time, and win the game!"
+}
+
+h1, h3{
+    text-align: center;
+    margin: 3px;
+}
+
+#win_message2_background{
+    position: absolute;
+    top: 0%;
+    left: 27%;
+    width: 45%;
+    height: 30%;
+    display: none;
+    z-index: 2;
+}
+
+#boom_background{
+    display: None; 
+    position:absolute; 
+    top:0%; 
+    left:0%; 
+    width:100%; 
+    height:100%;
+    z-index:4;
+}
+
+#video4{
+    display: None;
+    position: fixed; 
+    border:0px; 
+    top: 0px; 
+    left:0px; 
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+#boom_message{
+    position: absolute;
+    z-index: 5;
+    top:25%;
+    left:20%;
+    font-size: 500%;
+    text-shadow: 0 0 50px rgb(22, 7, 105);
+    color: white;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+}
+
+@keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+#boom_message2{
+    position: absolute;
+    z-index: 5;
+    top:43%;
+    left:25%;
+    font-size: 500%;
+    text-shadow: rgb(204, 204, 204) 0px 1px 0px, rgb(201, 201, 201) 0px 2px 0px, rgb(187, 187, 187) 0px 3px 0px, rgb(185, 185, 185) 0px 4px 0px, rgb(170, 170, 170) 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 6px 1px, rgba(0, 0, 0, 0.1) 0px 0px 5px, rgba(0, 0, 0, 0.3) 0px 1px 3px, rgba(0, 0, 0, 0.15) 0px 3px 5px, rgba(0, 0, 0, 0.2) 0px 5px 10px, rgba(0, 0, 0, 0.2) 0px 10px 10px, rgba(0, 0, 0, 0.1) 0px 20px 20px;
+    color: white;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    transform-origin: top center;
+    animation: pulse 1s  infinite;
+}
+
+h4{
+    position: absolute;
+    top: 3%;
+    left: 80%;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+}
+
+h6{
+    position: absolute;
+    top: 7%;
+    left: 79.5%;
+    font-family: Microsoft JhengHei;
+}
+
+#blue_kid_number{
+    font-size: 200%;
+    color: blue;
+}
+
+#red_kid_number{
+    font-size: 200%;
+    color: red;
+}
+
+#change_blue{
+    position: absolute; 
+    top: 20%; 
+    left: 79.5%;
+}
+
+#change_red{
+    position: absolute; 
+    top: 27%; 
+    left: 79.5%;
+}
+
+#blue_turn{
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+}
+
+#red_turn{
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+}
+    
+@keyframes change {
+    0%{ text-shadow: 0 0 20px rgb(110, 81, 8)}
+    50%{ text-shadow: 0 0 100px rgb(110, 81, 8)}
+    100%{ text-shadow: 0 0 20px rgb(110, 81, 8)}
+}
+
+#alert{
+    position: absolute;
+    z-index: 2;
+    top:0%;
+    left:50%;
+    font-size: 400%;
+    text-shadow: 0 0 20px rgb(110, 81, 8);
+    font-family: Microsoft JhengHei;
+    color:white; 
+    margin: 10px;
+    font-weight: bold;
+   
+
+    animation: change 3s  ease-in  infinite ; 
+}
+
+@keyframes rubberBand {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  
+    
+#win_message{
+    position: absolute;
+    z-index: 2;
+    top:0%;
+    left:50%;
+    font-size: 500%;
+    text-shadow: 0 0 50px rgb(252, 6, 211);
+    color: white;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+
+    animation-name: rubberBand;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes  scratchy {
+    0% {
+        background-position: 0 0;
+    }
+    25% {
+        background-position: 0 0;
+    }
+    26% {
+        background-position: 100px -100px;
+    }
+    50% {
+        background-position: 100px -100px;
+    }
+    51% {
+        background-position: 200px -200px;
+    }
+    75% {
+        background-position: 200px -200px;
+    }
+    76% {
+        background-position: 300px -300px;
+    }
+    99% {
+        background-position: 300px -300px;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+#win_message2{
+    position: absolute;
+    z-index: 3;
+    top:5%;
+    left:36%;
+    font-size: 100px;
+    margin: 10px;
+    color: white;
+    font-family: Microsoft JhengHei;
+    font-weight: bold;
+    text-shadow: 2px 2px 6px #b2f0ce; 
+    background: linear-gradient(left, #06b9b9, #e8f535); 
+        background: -webkit-linear-gradient(left, #06b9b9, #e8f535);
+        background: -o-linear-gradient(right, #06b9b9, #e8f535);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		animation:scratchy 0.3s linear forwards infinite;
+}
+
+#blue_or_red_number{
+    position: absolute;
+    top: 5%;
+    left: 80%;
+
+}
+
+
+
